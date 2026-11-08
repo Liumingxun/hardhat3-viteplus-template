@@ -10,3 +10,11 @@ dist
 .env
 .env.*
 !.env.example
+
+# hardhat
+/artifacts
+/cache
+/coverage
+/.gas-snapshot
+/snapshots
+
