@@ -1,16 +1,27 @@
 {
-  "name": "hardhat-viteplus-template",
+  "name": "hardhat3-viteplus-template",
   "version": "0.0.0",
   "private": true,
-  "files": [
-    "dist"
+  "description": "Hardhat 3 + viem + Vite+ starter template for EVM smart contract projects",
+  "keywords": [
+    "ethereum",
+    "hardhat",
+    "solidity",
+    "viem",
+    "vite-plus"
   ],
   "type": "module",
   "scripts": {
+    "prepare": "vp config",
     "check": "vp check",
+    "hardhat": "vpx hardhat",
     "build": "vpx hardhat build",
     "test": "vpx hardhat test",
-    "run": "vpx hardhat run"
+    "test:solidity": "vpx hardhat test solidity",
+    "test:node": "vpx hardhat test nodejs",
+    "run": "vpx hardhat run",
+    "deploy": "vpx hardhat ignition deploy",
+    "clean": "vpx hardhat clean"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^3.1.9",
